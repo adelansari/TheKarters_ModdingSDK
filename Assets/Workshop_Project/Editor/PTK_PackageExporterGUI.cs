@@ -1118,7 +1118,10 @@ public class PTK_PackageExporterGUI
             iSelectedModIndex = EditorGUILayout.Popup("Select Mod", iSelectedModIndex, modNames);
 
             if(EditorGUI.EndChangeCheck())
+            {
                 bShowPassword = false;
+                strUploadPassword = ""; // Clear password so the new mod's password gets loaded
+            }
 
             exporter.iModsSortMode = EditorGUILayout.Popup("", exporter.iModsSortMode, new string[] { "Sort: None", "Sort: Mod Name", "Sort: Build Date" }, GUILayout.Width(150));
 
