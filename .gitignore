@@ -106,3 +106,9 @@ Build_ILCPP
 Build_ILCPP_QueueActionsCtn
 WwiseUnityIntegration_PS5_Src
 Mods
+
+/local/
+/Releases/
+/Runtime/NativeAntigravity/out/
+
+/local-unity-sdk-build.log

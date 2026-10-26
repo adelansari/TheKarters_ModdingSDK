@@ -1,5 +1,14 @@
 <h1 align="center">The Karters 2: Turbo Charged - Official Modding Unity SDK</h1>
 
+## Antigravity surface extension
+
+This fork adds an opt-in **Antigravity surface** control to `PTK_GroundType`.
+Import the small [SDK addon from Releases](https://github.com/adelansari/TheKarters_ModdingSDK/releases)
+into the official v1.08.1 Unity project, or clone with `git clone --recurse-submodules`.
+See [authoring and compatibility notes](Assets/Workshop_Project/Antigravity/README.md).
+The existing ground settings are unchanged. A compatible game runtime is required;
+the unmodified game treats marked sections as ordinary ground.
+
 <p align="center">
   <img src=https://github.com/PixelEdgeGames/TheKarters_WorkshopProjectRelease/assets/48760094/82225a4e-43d8-4079-8116-50b8e4572c03 alt="Game Logo">
 </p>
