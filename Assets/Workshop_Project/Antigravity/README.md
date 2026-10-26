@@ -1,4 +1,4 @@
-# Antigravity surfaces — SDK 0.1.0
+# Antigravity surfaces — SDK 0.1.1
 
 Select a road object with a Collider, add `PTK_GroundType`, and enable
 **Antigravity surface** in its inspector. Existing friction, audio and effects
@@ -22,4 +22,3 @@ clone this repository recursively. Unity version: **2020.3.47f1**. The addon doe
 not modify existing ground enum numbers, bit packing, scripts or friction values.
 
 Credit: original SDK by Pixel Edge Games; extension by DarkSlayer.
-Implementation assistance: OpenAI Codex. No generated art or audio is included.

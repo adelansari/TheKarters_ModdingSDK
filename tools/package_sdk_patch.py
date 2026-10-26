@@ -10,7 +10,7 @@ folder = Path("Assets/Workshop_Project/Antigravity")
 files = [editor, Path(str(editor) + ".meta"), Path(str(folder) + ".meta")]
 files += sorted(path.relative_to(root) for path in (root / folder).rglob("*") if path.is_file())
 files.append(Path("LICENSE-Antigravity.txt"))
-instructions = """ANTIGRAVITY SDK PATCH 0.1.0 - for Unity.ModdingTools v1.08.1
+instructions = """ANTIGRAVITY SDK PATCH 0.1.1 - for Unity.ModdingTools v1.08.1
 
 1. Close Unity and back up your project.
 2. Extract this ZIP into the existing Unity project root (the folder containing
@@ -31,17 +31,17 @@ Uninstall: remove TK2_AntigravityGroundEditor.cs and its .meta, plus the
 Workshop_Project/Antigravity example folder and its .meta. In authored scenes,
 remove __TK2_Antigravity_v1 children from surfaces you no longer want marked.
 
-Original SDK: Pixel Edge Games. Extension: DarkSlayer; Codex-assisted development.
+Original SDK: Pixel Edge Games. Extension: DarkSlayer.
 """
 payload = {path.as_posix(): (root / path).read_bytes() for path in files}
 payload["README-ANTIGRAVITY-PATCH.txt"] = instructions.encode("utf-8")
 manifest = {
-    "version": "0.1.0", "baseSdk": "1.08.1", "unity": "2020.3.47f1",
+    "version": "0.1.1", "baseSdk": "1.08.1", "unity": "2020.3.47f1",
     "requiresGameRuntime": True,
     "files": {name: hashlib.sha256(data).hexdigest() for name, data in payload.items()},
 }
 payload["ANTIGRAVITY-PATCH-MANIFEST.json"] = (json.dumps(manifest, indent=2) + "\n").encode()
-output = root / "Releases/TK2-Antigravity-SDK-0.1.0-Patch-for-1.08.1.zip"
+output = root / "Releases/TK2-Antigravity-SDK-0.1.1-Patch-for-1.08.1.zip"
 output.parent.mkdir(exist_ok=True)
 with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for name, data in payload.items():

@@ -1,6 +1,6 @@
 # Antigravity extension changelog
 
-## SDK 0.1.0
+## SDK 0.1.1
 
 - Opt-in ground inspector control, multiple selection and Undo support.
 - Standard child Transform marker; no unknown gameplay script or enum.

@@ -102,7 +102,7 @@ namespace TK2.Antigravity
             }
             finally { bundle.Unload(true); }
             AssetDatabase.ExportPackage(new[] { "Assets/Workshop_Project/Editor/TK2_AntigravityGroundEditor.cs", Folder },
-                "Releases/TK2-Antigravity-SDK-0.1.0.unitypackage", ExportPackageOptions.Recurse);
+                "Releases/TK2-Antigravity-SDK-0.1.1.unitypackage", ExportPackageOptions.Recurse);
             Debug.Log("TK2 ANTIGRAVITY SDK: marker round trip verified; release package exported.");
         }
     }
