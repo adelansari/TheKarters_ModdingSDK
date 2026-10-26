@@ -6,6 +6,8 @@ This fork adds an opt-in **Antigravity surface** control to `PTK_GroundType`.
 Import the small [SDK addon from Releases](https://github.com/adelansari/TheKarters_ModdingSDK/releases)
 into the official v1.08.1 Unity project, or clone with `git clone --recurse-submodules`.
 See [authoring and compatibility notes](Assets/Workshop_Project/Antigravity/README.md).
+Experimental native companion source: [Runtime/NativeAntigravity](Runtime/NativeAntigravity/README.md). It has passed metadata and offline-menu startup checks; marked-track gameplay is not yet validated.
+
 The existing ground settings are unchanged. A compatible game runtime is required;
 the unmodified game treats marked sections as ordinary ground.
 
